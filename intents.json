@@ -1,0 +1,18 @@
+{
+  "lost_card": {
+    "keywords": ["lost card", "stolen card", "my card is gone", "my card vanished", "i lost my debit card"],
+    "response": "I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support."
+  },
+  "check_balance": {
+    "keywords": ["balance", "account balance", "how much money", "how much do i have", "check my balance"],
+    "response": "Your current balance is shown on the account overview page in this prototype."
+  },
+  "open_savings": {
+    "keywords": ["open savings", "savings account", "new savings account", "open a savings account"],
+    "response": "You can open a savings account online through the products section of the banking app."
+  },
+  "transaction_query": {
+    "keywords": ["why was money taken", "transaction", "payment taken", "charged me", "why was 10 taken"],
+    "response": "Please check your recent transactions. In a full system, merchant details would be shown here."
+  }
+}

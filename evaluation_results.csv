@@ -1,0 +1,16 @@
+﻿query,expected_intent,rule_intent,rule_confidence,rule_correct,transformer_intent,transformer_confidence,transformer_correct
+I lost my debit card,lost card,lost card,1.0,1,lost card,0.9701492190361023,1
+My card disappeared,lost card,fallback,0.0,0,lost card,0.9760894775390625,1
+My card was stolen,lost card,fallback,0.0,0,lost card,0.9260263442993164,1
+What is my balance,check balance,check balance,1.0,1,transaction query,0.5016236901283264,0
+How much money do I have,check balance,check balance,1.0,1,transaction query,0.7418949007987976,0
+Check my account balance,check balance,check balance,1.0,1,check balance,0.9521676301956177,1
+I want to open a savings account,open savings account,open savings,1.0,0,open savings account,0.9577153325080872,1
+Could I open a savings account,open savings account,open savings,1.0,0,open savings account,0.7103704810142517,1
+I need a new savings account,open savings account,open savings,1.0,0,open savings account,0.8212989568710327,1
+Why was money taken from me,transaction query,transaction query,1.0,1,transaction query,0.8206101655960083,1
+What happened to my payment,transaction query,fallback,0.0,0,transaction query,0.5454801917076111,1
+How much money have I spent this month,transaction query,check balance,1.0,0,transaction query,0.8216332793235779,1
+hello,fallback,fallback,0.0,1,fallback,0.3924463093280792,1
+can you help me with something strange,fallback,fallback,0.0,1,fallback,0.30506640672683716,1
+what is the weather today,fallback,fallback,0.0,1,fallback,0.37650611996650696,1

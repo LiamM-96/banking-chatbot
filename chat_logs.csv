@@ -1,0 +1,41 @@
+timestamp,user_message,intent,response,confidence,model
+2026-04-06T07:48:13.038805,my card disappeared,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-06T07:48:23.603895,how much money is left,check_balance,Your current balance is shown on the account overview page in this prototype.,1.0,rule_based
+2026-04-06T07:48:29.694700,what happened to my payment,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-06T07:48:33.437023,hello,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-06T07:48:40.145163,can you help me with something strange,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-06T07:48:51.780463,my card disappeared,lost card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,0.9767807722091675,transformer
+2026-04-06T07:48:59.041969,how much money is left,transaction query,"Please check your recent transactions. In a full system, merchant details would be shown here.",0.6960069537162781,transformer
+2026-04-06T07:49:07.203169,what happened to my payment,transaction query,"Please check your recent transactions. In a full system, merchant details would be shown here.",0.6042966842651367,transformer
+2026-04-06T07:49:11.200398,hello,fallback,I’m not fully confident about that request. Could you rephrase it?,0.3924463093280792,transformer
+2026-04-06T07:49:19.964524,can you help me with something strange,fallback,I’m not fully confident about that request. Could you rephrase it?,0.30506640672683716,transformer
+2026-04-06T07:49:43.559738,could i open a savings account?,open savings account,You can open a savings account online through the products section of the banking app.,0.6581966876983643,transformer
+2026-04-06T07:49:54.940672,how much money have i spent this month?,transaction query,"Please check your recent transactions. In a full system, merchant details would be shown here.",0.7812880277633667,transformer
+2026-04-28T20:02:36.272587,I lost my card,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-28T20:02:46.742834,My card disappeared,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-28T20:03:46.557518,i lost my card,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-28T20:03:53.752614,my card disappeared,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-28T20:04:07.071100,lost my card,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-28T20:04:11.074903,lost card,lost_card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,1.0,rule_based
+2026-04-28T20:05:10.488969,balance,check_balance,Your current balance is shown on the account overview page in this prototype.,1.0,rule_based
+2026-04-28T20:05:23.037876,stolen card,lost_card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,1.0,rule_based
+2026-04-28T20:05:28.901511,my card is gone?,lost_card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,1.0,rule_based
+2026-04-28T20:05:35.010845,my card vanished :(,lost_card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,1.0,rule_based
+2026-04-28T20:05:47.830249,how much do i have,check_balance,Your current balance is shown on the account overview page in this prototype.,1.0,rule_based
+2026-04-28T20:05:57.140570,how much money do i have,check_balance,Your current balance is shown on the account overview page in this prototype.,1.0,rule_based
+2026-04-28T20:06:06.505688,can i check my balance,check_balance,Your current balance is shown on the account overview page in this prototype.,1.0,rule_based
+2026-04-28T20:06:25.735676,do i have enough money,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-28T20:06:56.593856,i lost my card,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-28T20:07:12.841651,i lost my debit card,lost_card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,1.0,rule_based
+2026-04-28T20:07:26.348724,i lost my credit card,fallback,I’m not sure I understood that. Could you rephrase your banking query?,0.0,rule_based
+2026-04-28T20:08:48.220867,i lost my card,lost card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,0.9720839858055115,transformer
+2026-04-28T20:08:57.920408,i lost my debit card,lost card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,0.9612456560134888,transformer
+2026-04-28T20:09:12.257646,my card disappeared,lost card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,0.9767807722091675,transformer
+2026-04-28T20:09:53.856219,my card is gone?,lost card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,0.8818157315254211,transformer
+2026-04-28T20:10:17.067906,someone stole my card,lost card,I’m sorry to hear that. You should freeze your card immediately from the banking app or contact support.,0.9167341589927673,transformer
+2026-04-28T20:10:44.438617,What's the weather today?,transaction query,"Please check your recent transactions. In a full system, merchant details would be shown here.",0.5383384227752686,transformer
+2026-04-28T20:11:03.713497,what is the weather today?,transaction query,"Please check your recent transactions. In a full system, merchant details would be shown here.",0.4131317734718323,transformer
+2026-04-28T20:12:01.955037,How do I cook pasta?,transaction query,"Please check your recent transactions. In a full system, merchant details would be shown here.",0.6140946745872498,transformer
+2026-04-28T20:12:09.761864,Tell me a joke about football,transaction query,"Please check your recent transactions. In a full system, merchant details would be shown here.",0.7251999378204346,transformer
+2026-04-28T20:12:17.035113,Can you book me a holiday?,transaction query,"Please check your recent transactions. In a full system, merchant details would be shown here.",0.8467479348182678,transformer
+2026-04-28T20:16:36.482334,Tell me a joke about football,fallback,I’m not fully confident about that request. Could you rephrase it?,0.7251999378204346,transformer

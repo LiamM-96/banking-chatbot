@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Chatbot Prototype</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Banking Chatbot Prototype</h1>
+
+        <label for="modelSelect">Choose chatbot:</label>
+        <select id="modelSelect">
+            <option value="rule_based">Rule-Based</option>
+            <option value="transformer">Transformer</option>
+        </select>
+
+        <div id="chatbox" class="chatbox"></div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your banking question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById("userInput");
+            const chatbox = document.getElementById("chatbox");
+            const model = document.getElementById("modelSelect").value;
+            const message = input.value.trim();
+
+            if (!message) return;
+
+            chatbox.innerHTML += `<div class="user-msg"><strong>You:</strong> ${message}</div>`;
+
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({message: message, model: model})
+            });
+
+            const data = await response.json();
+
+            chatbox.innerHTML += `
+                <div class="bot-msg">
+                    <strong>Bot:</strong> ${data.response}<br>
+                    <small>
+                        Intent: ${data.intent} |
+                        Model: ${data.model} |
+                        Confidence: ${Number(data.confidence).toFixed(2)}
+                    </small>
+                </div>
+            `;
+
+            input.value = "";
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+    </script>
+</body>
+</html>

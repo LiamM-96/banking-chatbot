@@ -1,0 +1,16 @@
+query,expected_intent
+I lost my debit card,lost card
+My card disappeared,lost card
+My card was stolen,lost card
+What is my balance,check balance
+How much money do I have,check balance
+Check my account balance,check balance
+I want to open a savings account,open savings account
+Could I open a savings account,open savings account
+I need a new savings account,open savings account
+Why was money taken from me,transaction query
+What happened to my payment,transaction query
+How much money have I spent this month,transaction query
+hello,fallback
+can you help me with something strange,fallback
+what is the weather today,fallback
